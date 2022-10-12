@@ -1,0 +1,246 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.conteiner{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "hero hero hero"
+    "info info info"
+    "footer footer footer";
+    gap: 1px;
+}
+
+
+.conteiner > *{
+    border: 1px solid black;
+    text-align: center;
+}
+
+/*header*/
+
+.header {
+    background-color:#37332B;
+    grid-area: header;
+}
+.menu {
+    list-style: none;
+    background-color: #BBA063;
+    border-radius: 0.5rem;
+}
+.menu li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.menu li a {
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+}
+
+/*hero*/
+
+#hero {
+    background-image: url(../../img/envios2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    height: 55vh;
+    color: bisque;
+    padding: 2rem;
+    grid-area: hero;
+}
+
+/*articulos*/
+
+.btn {
+    display: block;
+    background-color: #37332B;
+    color: #BBA063;
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    background-color: #918E7C;
+    padding: 2rem;
+    gap: 1rem;
+    grid-area: info;
+}
+.titulo {
+    font-size: x-large;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.art {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #37332B;
+    grid-area: footer;
+}
+.logo-footer {
+    padding: 0;
+    margin: 0;
+}
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+    list-style: none;
+}
+.lg {
+    list-style: none;
+    margin-bottom: 0.5rem;
+    padding-right: 0.5rem;
+}
+.menu-footer li a {
+    text-decoration: none;
+    color: white;
+}
+h4 {
+    text-decoration: underline;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    color: white;
+    text-align: center;
+}
+.contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: inherit;
+    text-decoration: none;
+    color: #EAE7DF;
+}
+.contactos ul{
+    font-family: sans-serif;
+    list-style: none;
+}
+.contactos li{
+    margin: 0.5rem;
+}
+.redes_sociales {
+    display: flex;
+    justify-content: space-between;
+    padding-right:2rem ;
+}
+.redes_sociales ul {
+    display: flex;
+}
+img.redes-img {
+    width: 4vh;
+}
+
+/* contactos */
+
+/* formulario */
+.formulario h3{
+    margin: 1rem;
+}
+input[type=text],[type=email],[type=tel],textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #37332B;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #918E7C;
+}
+input[type=Enviar] {
+    background-color: #BBA063;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=Enviar]:hover {
+    background-color:#BBA080;
+}
+::placeholder{
+    color: #EAE7DF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: #918E7C;
+}
+.formulario{
+    border-radius: 5px;
+    background-color: #918E7C;
+    padding: 20px;
+}
+
+/* Accesorios */
+
+/* Productos */
+.conteiner__products {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+}
+.product {
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+}
+.product__img{
+    width: 40%;
+    height: 230px;
+    object-fit: cover;
+}
+.prduct__title{
+    text-align: center;
+}
+.product__price{
+    color: #BBA063;
+    font-weight: bold;
+}
+.product__icon{
+    display: block;
+    margin-top: 10px;
+}
+
+/* medida tablet */
+
