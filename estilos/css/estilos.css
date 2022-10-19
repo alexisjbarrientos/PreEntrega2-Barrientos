@@ -4,7 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: Arial, Helvetica, sans-serif;
+    background-color: #918E7C;
+}
 
 /* botones */
 
@@ -39,47 +41,39 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 /*hero*/
-
-#hero {
-    background-image: url(../../img/envios2.jpg);
-    background-size: cover;
-    background-position-y: center;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    text-align: center;
-    height: 55vh;
-    color: bisque;
-    padding: 2rem;
-    grid-area: hero;
+.hero{
+    margin-bottom: 0.5rem;
 }
 
+.hero--alto{
+    height: 50vh;
+}
+.hero--img{
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+}
 /*articulos*/
 
-#info {
-    display: flex;
-    align-items: center;
-    background-color: #918E7C;
-    padding: 2rem;
-    gap: 1rem;
-    grid-area: info;
+.art{
+    margin: 0.5rem;
 }
 .titulo {
-    font-size: x-large;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    margin: 0.5rem;
 }
 .img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    margin: 0.5rem;
+}
+.art--parrafo{
+    margin: 0.5rem;
+    text-align: center;
+    font-size: large;
 }
 
-.art {
+.art--col {
     display: flex;
     flex-direction: column;
     align-items: center;
