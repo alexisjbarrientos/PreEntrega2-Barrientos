@@ -6,6 +6,7 @@
 }
 body {font-family: Arial, Helvetica, sans-serif;
     background-color: #918E7C;
+    max-width: 100%;
 }
 
 /* botones */
@@ -31,7 +32,9 @@ body {font-family: Arial, Helvetica, sans-serif;
 .logo {
     display: flex;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 0;
+    height: auto;
+    max-width: 100%;
 }
 .menu{
     background-color: #BBA063;
@@ -82,70 +85,21 @@ body {font-family: Arial, Helvetica, sans-serif;
 
 /*footer*/
 
-footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
+.footer--bg{
     background-color: #37332B;
-    grid-area: footer;
 }
-.logo-footer {
-    padding: 0;
-    margin: 0;
-}
-.menu-footer {
+.footer--img {
     display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    align-items: center;
-    list-style: none;
-}
-.lg {
-    list-style: none;
-    margin-bottom: 0.5rem;
-    padding-right: 0.5rem;
-}
-.menu-footer li a {
-    text-decoration: none;
-    color: white;
-}
-h4 {
-    text-decoration: underline;
-    padding-bottom: 1rem;
-    padding-right: 2rem;
-    color: white;
-    text-align: center;
-}
-.contactos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: inherit;
-    text-decoration: none;
-    color: #EAE7DF;
+    align-items: center;
 }
-.contactos ul{
-    font-family: sans-serif;
-    list-style: none;
+@media (max-width: 768px) {
+    .footer--cs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
-.contactos li{
-    margin: 0.5rem;
-}
-.redes_sociales {
-    display: flex;
-    justify-content: space-between;
-    padding-right:2rem ;
-}
-.redes_sociales ul {
-    display: flex;
-}
-img.redes-img {
-    width: 4vh;
-}
-
 /* contactos */
 
 /* formulario */
