@@ -9,81 +9,143 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../estilos/css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../PreEntrega1+Barrientos/estilos/css/estilos.css">
 </head>
 <body>
+
+<div class="container-fluid p-0 mx-0">
     <header class="header">
         <div class="logo">
-            <a href="../index.html"><img src="../img/logo2.png" alt="Tienda Nox logo"></a>
+            <a href="../index.html"><img src="../img/logo2.png"  class="figure-img img-fluid rounded" alt="Tienda Nox logo"></a>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../vistas/Accesorios.html">Accesorios</a></li>
-                <li><a href="../vistas/Indumentaria.html">Indumentaria</a></li>
-                <li><a href="../vistas/Bazar.html">Bazar</a></li>
-                <li><a href="#">Contactos</a></li>
-            </ul>
+
+        <!-- menu -->
+
+        <nav class="navbar navbar-expand-lg bg-light p-0">
+            <div class="container-fluid menu">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../vistas/contactos.html">Consultas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Indumentaria</a></li>
+                                <li><a class="dropdown-item" href="../vistas/bazar.html">Bazar</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="../vistas/accesorios.html">Accesorios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 barra" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success botones" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <section class="conteiner__products">
-            <div class="product">
-                <img src="../img/gorra.jpg" alt="gorra img" class="product__img">
-                    <div class="product__description">
-                        <h3  class="product__title">Gorra </h3>
-                        <spam class="product__price">$3000</spam>
-                    </div>
-                <i class="product__icon fas fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <img src="../img/shorts.jpg" alt="shorts img" class="product__img">
-                    <div class="product__description">
-                        <h3 class="product__title">Shorts jeans</h3>
-                        <spam class="product__price">$4000</spam>
-                    </div>
-                <i class="product__icon fas fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <img src="../img/campera.jpg" alt="campera img" class="product__img">
-                    <div class="product__description">
-                        <h3 class="product__title">Campera Cuero</h3>
-                        <spam class="product__price">$6000</spam>
-                    </div>
-                <i class="product__icon fas fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <img src="../img/vestido.jpg" alt="vestido img" class="product__img">
-                    <div class="product__description">
-                        <h3 class="product__title">Vestido Gris</h3>
-                        <spam class="product__price">$5500</spam>
-                    </div>
-                <i class="product__icon fas fa-cart-plus"></i>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="logo-footer">
-            <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+</div>
+
+<!-- Productos -->
+
+<main>
+    <div class="container-fluid m-1 text-center overflow-hidden">
+        <div class="grid ">
+            <figure class="figure col-xs-1 col-md-3 col-lg-3">
+                <img src="../img/vestido.jpg" class="figure-img img-fluid rounded" alt="vestido">
+                <h3>Vestido</h3>
+                <p class="h5">$1000</p>
+            </figure>
+            <figure class="figure col-xs-1 col-md-3 col-lg-3">
+                <img src="../img/vestido.jpg" class="figure-img img-fluid rounded" alt="vestido">
+                <h3>Vestido</h3>
+                <p class="h5">$1000</p>
+            </figure>
+            <figure class="figure col-xs-1 col-md-3 col-lg-3">
+                <img src="../img/vestido.jpg" class="figure-img img-fluid rounded" alt="vestido">
+                <h3>Vestido</h3>
+                <p class="h5">$1000</p>
+            </figure>
+            <figure class="figure col-xs-1 col-md-3 col-lg-3">
+                <img src="../img/vestido.jpg" class="figure-img img-fluid rounded" alt="vestido">
+                <h3>Vestido</h3>
+                <p class="h5">$1000</p>
+            </figure>
+            <figure class="figure col-xs-1 col-md-3 col-lg-3">
+                <img src="../img/vestido.jpg" class="figure-img img-fluid rounded" alt="vestido">
+                <h3>Vestido</h3>
+                <p class="h5">$1000</p>
+            </figure>
+            <figure class="figure col-xs-1 col-md-3 col-lg-3">
+                <img src="../img/vestido.jpg" class="figure-img img-fluid rounded" alt="vestido">
+                <h3>Vestido</h3>
+                <p class="h5">$1000</p>
+            </figure>
+            <figure class="figure col-xs-1 col-md-3 col-lg-3">
+                <img src="../img/vestido.jpg" class="figure-img img-fluid rounded" alt="vestido">
+                <h3>Vestido</h3>
+                <p class="h5">$1000</p>
+            </figure>
+            <figure class="figure col-xs-1 col-md-3 col-lg-3">
+                <img src="../img/vestido.jpg" class="figure-img img-fluid rounded" alt="vestido">
+                <h3>Vestido</h3>
+                <p class="h5">$1000</p>
+            </figure>
+            <figure class="figure col-xs-1 col-md-3 col-lg-3">
+                <img src="../img/vestido.jpg" class="figure-img img-fluid rounded" alt="vestido">
+                <h3>Vestido</h3>
+                <p class="h5">$1000</p>
+            </figure>
         </div>
-        <div class="contactos">
-            <h4>Contactanos!!</h4>
-                <ul>
-                    <li>Direccion: abcabc 1421 buenos aires</li>
-                    <li>Telefonos: 1142345534</li>
-                    <li>Email:Tiendanox@info.com</li>
-                    <li>Horarios:Lun a Vie de 08:00 a 20:00</li>
-                </ul>
-        </div>
-        <div>
-            <h4>Siguenos</h4>
-            <div class="redes_sociales">
-                <ul>
-                    <li class="lg"><a href="https://www.instagram.com/tienda.nox_/"><img class="redes-img" src="../img/instagram.png" alt="Logo Instagram"></a></li>
-                    <li class="lg"><a href="https://www.facebook.com/Tiendanox934"><img class="redes-img" src="../img/facebook.png" alt="Logo Facebook"></a></li>
-                </ul>
+    </div>
+</main>
+
+<!-- footer -->
+
+<footer>
+    <div class="container-fluid p-0">
+        <div class="row p-4 text-white footer--bg">
+            <div class="col-xs-12 col-md-3 col-lg-3 footer--img">
+                <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>  
+            </div>
+            <div class="col-xs-12 col-md-3 col-lg-3 text-center">
+                <p class="h5 mb-2">Categorias</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="../vistas/accesorios.html">Accesorios</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="../vistas/bazar.html">Bazar</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Indumentaria</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 col-lg-3">
+                <p class="h5">Contactanos</p>
+                <p class="text-secondary">Direccion: Rivadavia 2342,Buenos Aires</p>                               
+                <p class="text-secondary">Telefono: 112233445</p>
+                <p class="text-secondary">Email: tiendanox@info.com</p>
+                <p class="text-secondary">Horarios: Lun a Vie de 08:00 a 20:00</p>
+            </div>
+            <div class="col-xs-12 col-md-3 col-lg-3 footer--sc">
+                <p class="h5">Sigamos Conectados</p>
+                <a class="text-secondary text-decoration-none" href="https://www.instagram.com/tienda.nox_/">Instagram</a>
+                <a class="text-secondary text-decoration-none" href="https://www.facebook.com/Tiendanox934">Facebook</a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
