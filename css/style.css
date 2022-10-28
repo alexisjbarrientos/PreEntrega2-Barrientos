@@ -6,7 +6,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #918E7C;
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0; }
 
 /* botones */
 .botones {
@@ -51,6 +52,14 @@ body {
 /*articulos*/
 .art {
   margin: 0.5rem; }
+  .art parrafo {
+    margin: 0.5rem;
+    text-align: center;
+    font-size: large; }
+  .art col {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 .titulo {
   margin: 0.5rem; }
@@ -60,16 +69,6 @@ body {
   height: 150px;
   border-radius: 50%;
   margin: 0.5rem; }
-
-.art--parrafo {
-  margin: 0.5rem;
-  text-align: center;
-  font-size: large; }
-
-.art--col {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
 
 /* ANIMACIONES */
 .pulsate-fwd {
@@ -104,19 +103,17 @@ body {
     transform: scale(1); } }
 
 /*footer*/
-.footer--bg {
-  background-color: #37332B; }
-
-.footer--img {
+.footer img {
   display: flex;
   justify-content: center;
   align-items: center; }
 
+.footer--bg {
+  background-color: #37332B;
+  padding: 0; }
+
 /* contactos */
 /* formulario */
-.formulario h3 {
-  margin: 1rem; }
-
 input[type=text], [type=email], [type=tel], textarea {
   width: 100%;
   padding: 12px;
@@ -154,3 +151,5 @@ input[type=Enviar]:hover {
   border-radius: 5px;
   background-color: #918E7C;
   padding: 20px; }
+  .formulario h3 {
+    margin: 1rem; }
