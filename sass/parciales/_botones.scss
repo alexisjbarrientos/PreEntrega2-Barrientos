@@ -1,0 +1,15 @@
+//  botones
+.botones{
+    background-color: $color-principal;
+    color: $color-fondo;
+    border-color: black;
+    width: 80%;
+    margin: auto;
+
+
+&__:hover{
+    background-color: $color-fondo;
+    color: $color-principal;
+    border-color:$color-black;}
+
+}

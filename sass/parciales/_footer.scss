@@ -1,0 +1,13 @@
+/*footer*/
+
+.footer{
+    img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+.footer--bg{
+        background-color: $color-principal;
+        padding: 0;
+}

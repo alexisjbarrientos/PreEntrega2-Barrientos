@@ -1,0 +1,19 @@
+
+// header
+
+.header {
+    background-color:$color-principal;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: auto;
+    max-width: 100%;
+}
+.menu{
+    background-color: $color-fondo;
+}
+.barra{
+    margin: 0;
+}

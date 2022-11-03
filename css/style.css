@@ -9,18 +9,6 @@ body {
   max-width: 100%;
   margin: 0; }
 
-/* botones */
-.botones {
-  background-color: #37332B;
-  color: #BBA063;
-  border-color: black; }
-
-.botones:hover {
-  background-color: #BBA063;
-  color: #37332B;
-  border-color: black; }
-
-/*header*/
 .header {
   background-color: #37332B; }
 
@@ -52,14 +40,6 @@ body {
 /*articulos*/
 .art {
   margin: 0.5rem; }
-  .art parrafo {
-    margin: 0.5rem;
-    text-align: center;
-    font-size: large; }
-  .art col {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
 
 .titulo {
   margin: 0.5rem; }
@@ -69,6 +49,16 @@ body {
   height: 150px;
   border-radius: 50%;
   margin: 0.5rem; }
+
+.art--parrafo {
+  margin: 0.5rem;
+  text-align: center;
+  font-size: large; }
+
+.art--col {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 /* ANIMACIONES */
 .pulsate-fwd {
@@ -102,17 +92,6 @@ body {
     -webkit-transform: scale(1);
     transform: scale(1); } }
 
-/*footer*/
-.footer img {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.footer--bg {
-  background-color: #37332B;
-  padding: 0; }
-
-/* contactos */
 /* formulario */
 input[type=text], [type=email], [type=tel], textarea {
   width: 100%;
@@ -153,3 +132,24 @@ input[type=Enviar]:hover {
   padding: 20px; }
   .formulario h3 {
     margin: 1rem; }
+
+.botones {
+  background-color: #37332B;
+  color: #BBA063;
+  border-color: black;
+  width: 80%;
+  margin: auto; }
+  .botones__:hover {
+    background-color: #BBA063;
+    color: #37332B;
+    border-color: black; }
+
+/*footer*/
+.footer img {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer--bg {
+  background-color: #37332B;
+  padding: 0; }
