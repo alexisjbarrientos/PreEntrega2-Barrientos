@@ -1,4 +1,8 @@
-//  botones
+
+$color-principal :#37332B;
+$color-segundario : #918E7C;
+$color-fondo:  #BBA063;
+$color-black: black;
 .botones{
     background-color: $color-principal;
     color: $color-fondo;
@@ -7,7 +11,7 @@
     margin: auto;
 
 
-&__:hover{
+&:hover{
     background-color: $color-fondo;
     color: $color-principal;
     border-color:$color-black;}
