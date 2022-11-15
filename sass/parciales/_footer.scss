@@ -1,10 +1,10 @@
 /*footer*/
 
 .footer{
-    img {
+    &-img {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 }
 }
 .footer--bg{

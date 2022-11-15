@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
 
 <div class="container-fluid p-0 mx-0 ">
     <header class="header">
@@ -57,8 +57,6 @@
             </div>
         </nav>
     </header>
-</div>
-
 <!-- hero carousel -->
 <main>
 <section class=" hero">
@@ -95,24 +93,24 @@
 
 <!-- articulos -->
 
-<section class="container-fluid p-0 art mx-0">
-    <div class="row mx-0">
-        <article class="art--col col-md-4">
-            <img class="img-fluid img pulsate-fwd" src="./img/collares.png" alt="collares">
+<section class="container-fluid p-0 ">
+    <div class="row mx-0 p-5 g-2 d-flex justify-content-around">
+        <article class="art--col col-md-3 d-flex">
+            <img class="img pulsate-fwd img-fluid" src="./img/collares.jpg" alt="collares">
             <h3 class="titulo">Accesorios</h3>
-            <p class="descripcion art--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, pariatur! Sed harum laborum voluptatem minima eligendi commodi doloremque molestias? Provident repellat quis similique consequatur sunt ducimus iste alias ut? Repudiandae?</p>
+            <p class="art--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, pariatur! Sed harum laborum voluptatem minima eligendi commodi doloremque molestias? Provident repellat quis similique consequatur sunt ducimus iste alias ut? Repudiandae?</p>
             <a class=" btn botones" href="./vistas/Accesorios.html">Ver mas..</a>
         </article>
-        <article class="art--col col-md-4">
-            <img class="img-fluid img pulsate-fwd" src="./img/indumentaria.jpg" alt="indumentaria img">
+        <article class="art--col col-md-3 d-flex ">
+            <img class="img pulsate-fwd img-fluid" src="./img/indumentaria.jpg" alt="indumentaria img">
             <h3 class="titulo">Indumentaria</h3>
-            <p class="descripcion art--parrafo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, adipisci. Non, eaque nihil earum mollitia sunt et accusamus modi totam aspernatur, velit at perferendis beatae, tenetur aliquid distinctio vitae corrupti!</p>
+            <p class="art--parrafo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, adipisci. Non, eaque nihil earum mollitia sunt et accusamus modi totam aspernatur, velit at perferendis beatae, tenetur aliquid distinctio vitae corrupti!</p>
             <a class=" btn botones"  href="./vistas/Indumentaria.html">Ver mas..</a>
         </article>
-        <article class="art--col col-md-4">
-            <img class="img-fluid img pulsate-fwd" src="./img/cocina.jpg" alt="cocina img">
+        <article class="art--col col-md-3 d-flex ">
+            <img class="img pulsate-fwd img-fluid" src="./img/cocina.jpg" alt="cocina img">
             <h3 class="titulo">Bazar</h3>
-            <p class="descripcion art--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil exercitationem nesciunt natus tenetur, reiciendis amet et nostrum quasi minus nulla, ipsam, doloremque necessitatibus vitae cum. Ad vel reprehenderit saepe magnam!</p>
+            <p class="art--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil exercitationem nesciunt natus tenetur, reiciendis amet et nostrum quasi minus nulla, ipsam, doloremque necessitatibus vitae cum. Ad vel reprehenderit saepe magnam!</p>
             <a class="botones btn" href="./vistas/Bazar.html">Ver mas..</a>
         </article>
     </div>
@@ -123,10 +121,10 @@
 <footer>
     <div class="container-fluid ">
         <div class="row p-4 text-white footer--bg p-0">
-            <div class="col-xs-12 col-md-3 col-lg-3 footer--img">
+            <div class="col-xs-12 col-md-3 col-lg-3 footer-img">
                 <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>  
             </div>
-            <div class="col-xs-12 col-md-3 col-lg-3 text-center">
+            <div class="col-xs-12 col-md-3 col-lg-3 text-start">
                 <p class="h5 mb-2">Categorias</p>
                 <div class="mb-2">
                     <a class="text-secondary text-decoration-none" href="./vistas/accesorios.html">Accesorios</a>
@@ -138,17 +136,31 @@
                     <a class="text-secondary text-decoration-none" href="./vistas/indumentaria.html">Indumentaria</a>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-3 col-lg-3">
+            <div class="col-xs-12 col-md-3 col-lg-3 text-start ">
                 <p class="h5">Contactanos</p>
-                <p class="text-secondary">Direccion: Rivadavia 2342,Buenos Aires</p>                               
-                <p class="text-secondary">Telefono: 112233445</p>
-                <p class="text-secondary">Email: tiendanox@info.com</p>
-                <p class="text-secondary">Horarios: Lun a Vie de 08:00 a 20:00</p>
+                <div>
+                    <p class="text-secondary m-0">Direccion: Rivadavia 2342,Buenos Aires</p>                               
+                </div>
+                <div>
+                    <p class="text-secondary m-0">Telefono: 112233445</p>
+                </div>
+                <div>
+                    <p class="text-secondary m-0">Email: tiendanox@info.com</p>
+                </div>
+                <div>
+                    <p class="text-secondary m-0">Horarios: Lun a Vie de 08:00 a 20:00</p>
+                </div>
             </div>
-            <div class="col-xs-12 col-md-3 col-lg-3 footer--sc">
+            <div class="col-xs-12 col-md-3 col-lg-3 text-center">
                 <p class="h5">Sigamos Conectados</p>
-                <a class="text-secondary text-decoration-none" href="https://www.instagram.com/tienda.nox_/">Instagram</a>
-                <a class="text-secondary text-decoration-none" href="https://www.facebook.com/Tiendanox934">Facebook</a>
+                <div>
+                    <a class="text-secondary text-decoration-none" href="https://www.instagram.com/tienda.nox_/">Instagram</a>
+                    <i class="bi bi-instagram incono-inst"></i>
+                </div>
+                <div>
+                    <a class="text-secondary text-decoration-none" href="https://www.facebook.com/Tiendanox934">Facebook</a>
+                    <i class="bi bi-facebook incono"></i>
+                </div>
             </div>
         </div>
     </div>
