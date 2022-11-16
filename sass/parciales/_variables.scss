@@ -6,3 +6,9 @@ $color-black: black;
 $color-face:#3C5C9C;
 $color-inst:#D5388D;
 
+// media query
+@mixin smartphone{
+    @media (max-width:480px){
+        @content;
+    }    
+}
