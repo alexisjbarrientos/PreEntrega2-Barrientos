@@ -104,8 +104,6 @@ body {
 .tamañoimg {
   width: 50vh; }
 
-  /* Formulario */
-
 .formulario h2 {
   text-align: center;
   margin: 0;
@@ -142,9 +140,16 @@ form {
   justify-content: center;
   align-items: baseline; }
 
+.footer centrar {
+  text-align: start; }
+
 .footer--bg {
   background-color: #37332B;
   padding: 0; }
+
+@media (max-width: 480px) {
+  .centrar {
+    text-align: center; } }
 
 .incono {
   font-size: 4vh;
